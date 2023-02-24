@@ -1,19 +1,19 @@
-import { NavLink, Outlet } from "react-router-dom";
-
+import { Outlet , NavLink} from "react-router-dom";
+import {PageHeader , Paragraph, Nav} from 'grommet'
 function HelpLayout() {
   return (
     <div>
         <div className="help-layout">
 
-            <h2>Website Help</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quas debitis quibusdam deserunt repellat hic molestias ipsum commodi aut odit!</p>
+            <PageHeader>Website Help</PageHeader>
+            <Paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quas debitis quibusdam deserunt repellat hic molestias ipsum commodi aut odit!</Paragraph>
 
-            <nav>
-            <NavLink to="faq">View the FAQ</NavLink>
-            <NavLink to="contact">Contact Us</NavLink>
-            </nav>
+            <Nav>
+              <NavLink to="faq">View the FAQ</NavLink>
+              <NavLink to="contact">Contact Us</NavLink>
+            </Nav>
 
-                <Outlet />
+             <Outlet />
 
         </div>
             
